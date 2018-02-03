@@ -4,6 +4,9 @@ enabled: true
 entry_point: test.sh
 name: test 
 parameters:
+  hosts: "{{ action_context.hosts }}"
+  username: "{{ action_context.username }}"
+  private_key: "{{ action_context.private_key }}"
   param:
     type: string
 runner_type: "remote-shell-cmd"
