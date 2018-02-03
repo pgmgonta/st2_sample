@@ -1,0 +1,9 @@
+---
+description: Test Action
+enabled: true
+entry_point: test.sh
+name: test 
+parameters:
+  param:
+    type: string
+runner_type: "remote-shell-cmd"
