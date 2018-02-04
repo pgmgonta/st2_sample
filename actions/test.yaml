@@ -4,9 +4,24 @@ enabled: true
 entry_point: test.sh
 name: test 
 parameters:
-  hosts: "{{ config_context.hosts }}"
-  # username: "{{ config_context.username }}"
-  private_key: "{{ config_context.private_key }}"
+  hosts:
+    type: "string"
+    require: true
+    position: 0
+    default: "{{ config_context.hosts }}"
+  username: 
+    type: "string"
+    require: true
+    position: 1
+    defaut: "{{ config_context.username }}"
+  private_key: 
+    type: "string"
+    require: true
+    position: 2
+    default: "{{ config_context.private_key }}"
   param:
+    type: "string"
+    require: true
+    position: 3
     type: string
 runner_type: "remote-shell-cmd"

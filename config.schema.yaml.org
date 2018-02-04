@@ -3,12 +3,15 @@
     type: "string"
     description: "ssh hosts"
     required: true
+    default: "{{config_context.hosts}}"
   username:
     type: "string"
     description: "ssh user"
     required: true
-  ssh_key:
+    default: "{{config_context.username}}"
+  private_key:
     type: "string"
     description: "ssh key and not path"
     required: true
+    default: "{{config_context.private_key}}"
 
