@@ -13,7 +13,7 @@ parameters:
     type: "string"
     require: true
     position: 1
-    defaut: "{{ config_context.username }}"
+    default: "{{ config_context.username }}"
   private_key: 
     type: "string"
     require: true
