@@ -1,3 +1,3 @@
 #!/bin/sh
 
-echo "${param}"
+echo "${param}" >>  test.txt
