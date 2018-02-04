@@ -15,4 +15,4 @@ parameters:
     position: 0
     required: true
     default: "{{ config_context.param}}"
-runner_type: "remote-shell-cmd"
+runner_type: "remote-shell-script"
