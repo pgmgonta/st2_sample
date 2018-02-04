@@ -18,7 +18,6 @@ parameters:
     default: "{{ config_context.private_key }}"
   param:
     type: "string"
-    require: True
+    require: true
     position: 3
-    type: string
 runner_type: "remote-shell-cmd"
