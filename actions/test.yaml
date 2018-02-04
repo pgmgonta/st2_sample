@@ -16,5 +16,4 @@ parameters:
   param:
     type: "string"
     required: true
-    position: 3
 runner_type: "remote-shell-cmd"
