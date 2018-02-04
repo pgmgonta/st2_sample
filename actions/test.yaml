@@ -5,14 +5,14 @@ entry_point: test.sh
 name: test 
 parameters:
   hosts:
-    default: "{{ args.hosts }}"
+    default: "{{ action_context.hosts }}"
   username: 
-    default: "{{ args.username }}"
+    default: "{{ action_context.username }}"
   private_key: 
-    default: "{{ args.private_key }}"
+    default: "{{ action_context.private_key }}"
   param:
     type: "string"
     position: 0
     required: true
-    default: "{{ args.param}}"
+    default: "{{ action_context.param}}"
 runner_type: "remote-shell-cmd"
