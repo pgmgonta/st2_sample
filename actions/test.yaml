@@ -5,7 +5,7 @@ entry_point: test.sh
 name: test 
 parameters:
   hosts: "{{ config_context.hosts }}"
-  username: "{{ config_context.username }}"
+  # username: "{{ config_context.username }}"
   private_key: "{{ config_context.private_key }}"
   param:
     type: string
