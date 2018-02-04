@@ -9,7 +9,7 @@ parameters:
   username: 
     default: "{{ config_context.username }}"
   private_key: 
-    default: "{{ config_context.private_key }}"
+    default: "{{ config_context.ssh_key }}"
   param:
     type: "string"
     position: 0
