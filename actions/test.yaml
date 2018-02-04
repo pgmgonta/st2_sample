@@ -6,17 +6,14 @@ name: test
 parameters:
   hosts:
     type: "string"
-    require: true
     position: 0
     default: "{{ config_context.hosts }}"
   username: 
     type: "string"
-    require: true
     position: 1
     default: "{{ config_context.username }}"
   private_key: 
     type: "string"
-    require: true
     position: 2
     default: "{{ config_context.private_key }}"
   param:
